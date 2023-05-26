@@ -535,6 +535,12 @@ $(function () {
 });
 
 
+function calcolaDifferenzaAnni() {
+	const annoCorrente = new Date().getFullYear();
+	const differenza = annoCorrente - 1997;
+	return differenza;
+  }
+
 /*
 	Google Map Options
 */
