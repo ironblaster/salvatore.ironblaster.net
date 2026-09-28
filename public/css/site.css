@@ -403,15 +403,12 @@ ol {
 
 .process .section-lead {
   color: rgba(232, 235, 230, 0.78);
+  margin-inline: auto;
 }
 
 .process .section-head {
   margin-inline: auto;
   text-align: center;
-}
-
-.process .section-lead {
-  margin-inline: auto;
 }
 
 .process-steps {
