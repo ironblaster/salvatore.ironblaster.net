@@ -104,15 +104,6 @@ ol {
   margin-inline: auto;
 }
 
-.eyebrow {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin: 0 0 0.85rem;
-}
-
 .section {
   padding: clamp(4rem, 10vw, 7rem) 0;
 }
@@ -271,10 +262,8 @@ ol {
   position: relative;
   z-index: 1;
   max-width: 920px;
-}
-
-.hero .eyebrow {
-  color: #8fd1c4;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .hero-brand {
@@ -289,7 +278,8 @@ ol {
 }
 
 .hero-lead {
-  max-width: 32rem;
+  max-width: 34rem;
+  margin-inline: auto;
   font-size: clamp(1.05rem, 2.2vw, 1.2rem);
   color: rgba(232, 235, 230, 0.82);
   margin-bottom: 1.5rem;
@@ -298,6 +288,7 @@ ol {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.85rem;
   margin-bottom: 1rem;
 }
@@ -410,12 +401,17 @@ ol {
   color: var(--hero-ink);
 }
 
-.process .eyebrow {
-  color: #8fd1c4;
+.process .section-lead {
+  color: rgba(232, 235, 230, 0.78);
+}
+
+.process .section-head {
+  margin-inline: auto;
+  text-align: center;
 }
 
 .process .section-lead {
-  color: rgba(232, 235, 230, 0.78);
+  margin-inline: auto;
 }
 
 .process-steps {
@@ -427,7 +423,8 @@ ol {
 
 .process-card {
   position: relative;
-  min-height: 280px;
+  min-height: 300px;
+  height: 100%;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid rgba(232, 235, 230, 0.14);
@@ -438,24 +435,21 @@ ol {
 
 .process-card--1 {
   background-image: url("../images/process/step-1.svg");
-  margin-top: 0;
 }
 
 .process-card--2 {
   background-image: url("../images/process/step-2.svg");
-  margin-top: 1.25rem;
 }
 
 .process-card--3 {
   background-image: url("../images/process/step-3.svg");
-  margin-top: 2.5rem;
 }
 
 .process-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(18, 24, 22, 0.35) 0%, rgba(18, 24, 22, 0.82) 55%, rgba(18, 24, 22, 0.94) 100%);
+  background: linear-gradient(180deg, rgba(18, 24, 22, 0.4) 0%, rgba(18, 24, 22, 0.78) 45%, rgba(18, 24, 22, 0.92) 100%);
   z-index: 0;
 }
 
@@ -464,10 +458,12 @@ ol {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 100%;
-  min-height: 280px;
-  padding: 1.5rem 1.35rem;
+  min-height: 300px;
+  padding: 1.75rem 1.35rem;
 }
 
 .process-card strong {
@@ -482,6 +478,7 @@ ol {
   margin: 0;
   color: rgba(232, 235, 230, 0.82);
   font-size: 0.98rem;
+  max-width: 18rem;
 }
 
 /* Experience */
@@ -636,12 +633,6 @@ ol {
   .process-steps,
   .milestones {
     grid-template-columns: 1fr;
-  }
-
-  .process-card--1,
-  .process-card--2,
-  .process-card--3 {
-    margin-top: 0;
   }
 }
 
